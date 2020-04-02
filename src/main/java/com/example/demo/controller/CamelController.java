@@ -64,7 +64,7 @@ public class CamelController {
 
     @DeleteMapping(value ="/employee")
     public int deleteEmployee(@RequestParam(name = "empNo",required = true) Integer empNo){
-        log.info("Delete Employee: "+ employeeService.deleteEmployee(empNo));
+        log.info("Delete Employee: "+ empNo);
         return employeeService.deleteEmployee(empNo);
     }
 

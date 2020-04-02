@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./style.css">
     <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./external.js"></script>
     <meta charset="UTF-8">
     <title>SpringBoot</title>
+    <style>
+
+    </style>
 </head>
 <body>
-<h1>Hello Michael Batoac</h1>
+<h1>Employees List</h1>
+<div id="content"></div>
+
+<h3>Create Employee</h3>
+<label>Employee name:</label><br>
+<input type="text" id="eName" style="width: 250px"><br>
+<label>Position:</label><br>
+<input type="text" id="ePosition" style="width: 250px"><br>
+<input type="submit" id="addBtn" onclick="addEmployee()" value="Add" style="width: 100px; height: 25px; background: #5cb85c ">
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Update Employee</h2>
+        </div>
+        <div class="modal-body">
+            <label>Employee name:</label><br>
+            <input type="text" id="upName" style="width: 250px"><br>
+            <label>Position:</label><br>
+            <input type="text" id="upPosition" style="width: 250px"><br>
+            <input type="text" id="upId" hidden><br>
+            <input type="submit" id="updBtn" onclick="updateEmployee()" value="Update" style="width: 100px; height: 25px; background: #5cb85c ">
+        </div>
+        <!-- <div class="modal-footer">
+             <h3>Modal Footer</h3>
+         </div>-->
+    </div>
+
+</div>
+
 </body>
 </html>
