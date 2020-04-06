@@ -1,7 +1,6 @@
 /*import * as utils from "./utils.js";*/
 /*import {getRequest} from "./utils";*/
 
-
 window.onload = async () => {
     modal = document.getElementById("myModal");
     span = document.getElementsByClassName("close")[0];
